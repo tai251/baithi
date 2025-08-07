@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  background-color: white;
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+nav input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.sidebar label {
+  font-size: 14px;
+  color: #333;
+}
+
+
+.main-video {
+  flex: 1;
+}
+
+.main-video iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.main-video p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.main-video a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.movie-card {
+  background-color: #fff8f8;
+  border: 1px solid #f3dcdc;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 80%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stars {
+  color: #fbc02d;
+  font-size: 16px;
+}
+
+
+.footer {
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
